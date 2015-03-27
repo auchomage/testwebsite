@@ -1,0 +1,31 @@
+.carousel {
+  margin-top: 20px;
+}
+.navbar-wrapper,.navbar-default, .navbar-fixed-top, .container 
+{
+  width: 100%;
+}
+.nav .container > .row,
+.footer,
+ul > li > a ,
+.col-xs-4 > .navbar-header > a,
+.col-xs-4 > .nav > li > a,
+.footer > .container > .row
+{
+  color: #ffffff;
+  background: #000033; /* Navy blue */
+}
+
+.container > .row
+{
+  color: #ffffff;
+  background: #e68a00; /* sand colour */
+}
+.container {
+  background: #000033;
+}
+.warningNotice {
+  color: #ffffff;
+  background: #20b2aa; /* dark turquoise */
+}
+

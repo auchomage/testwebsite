@@ -1,0 +1,72 @@
+.navbar-wrapper,.navbar-default, .navbar-fixed-top, .container 
+{
+  width: 100%;
+}
+
+.nav .container > .row,
+.footer,
+ul > li > a ,
+.col-xs-4 > .navbar-header > a,
+.col-xs-4 > .nav > li > a,
+.footer > .container > .row
+{
+  color: #ffffff; 
+  background: #000033;  /* Navy blue background */
+}
+
+.container > .row
+{
+  color: #ffffff; 
+   background: #e68a00;  /*carousel background  sand colour */
+}
+.container
+{
+    background: #000033;  /* Navy blue background for button row */
+}
+.warningNotice
+{
+  color: #ffffff;
+  background: #20b2aa; /* dark turquoise */
+}
+html, body 
+/* part 1: extend footer to the end of the page */
+{
+  height: 100%;
+}
+.site-container 
+/* part 2: extend footer to the end of the page  */
+{
+  overflow: hidden;
+  min-height: 100%;
+}
+.footer 
+/* part 3: extend footer to the end of the page */
+{
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+
+html
+/* vertical scroll bar */
+{
+  overflow-y: scroll;
+}
+.displayFullImage
+/* For the product pages */
+{
+  margin-top: 20%;
+}
+
+#aboutBackground,
+#contactInfo,
+#privacyInfo
+/* Displaying the text for footer menu */
+{
+  margin-top: 15%;
+}
+#moisturiser2,
+#moisturiser3
+/* Displays complete carousel images */
+{
+  margin-top: 10%;
+}

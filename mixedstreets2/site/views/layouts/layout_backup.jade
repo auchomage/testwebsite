@@ -1,0 +1,103 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    title Mixed Streets: Moisturisers 
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    link(type="text/css", rel="stylesheet", href="/bootstrap3_2_0/css/bootstrap.min.css")
+
+    link(type="text/css", rel="stylesheet", href="/bootstrap3_2_0/css/bootstrap-theme.min.css")
+    link(type="text/css", rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+    //-Will load for all devices
+    link(type="text/css", rel="stylesheet", href="stylesheets/custom.css" media="screen")
+    //- Will only load on devices with a viewport width less than or equal to 768px (i.e. tablets)
+    link(type="text/css", rel="stylesheet", href="stylesheets/tablet.css" media="only screen and (max-width: 768px)")
+    //- Will only load on devices with a viewport width less or equal to 320px (i.e. smartphones)
+    link(type="text/css", rel="stylesheet", href="stylesheets/mobile.css" media="only screen and (max-width: 320px)")
+
+  body( width="device-width")
+    .site-container
+      //- Navigation bar section
+      #topNavbar
+        .nav.navbar-wrapper.navbar-fixed-top(role="navigation")
+          .container
+            .row
+              p.text-center.warningNotice 
+                span *This is a test site*
+              .col-xs-4
+                .navbar-header
+                  a.navbar-brand(href="/layout") Mixed Streets Cremes
+              .col-xs-4
+                ul.nav.navbar-nav#moisturiserMenu
+                  li(id="moisturiserLink1")       
+                    a(href="/moisturiser1")
+                      span Moisturiser1
+                  li(id="moisturiserLink2")
+                    a(href="/moisturiser2")
+                      span Moisturiser2
+                  li(id="moisturiserLink3")
+                    a(href="/moisturiser3")
+                      span Moisturiser3
+              .col-xs-4
+                .nav.navbar-nav.navbar-right
+                  //-li      
+                    //-a(href="#")
+                    //-span.i.fa.fa-facebook-square.fa-2x
+                  li
+                    a(href="http://twitter.com/MixedstreetsCom" id="twitterIcon")
+                      span.i.fa.fa-twitter-square.fa-2x
+      
+      //- Content
+      .container
+        .row
+          .col-xs-6.col-xs-offset-3
+            block content
+              #myCarousel.carousel.slide(data-interval="3000" data-ride="carousel")
+                //- Carousel Indicators
+                ol.carousel-indicators
+                  li(data-target="#myCarousel" data-slide-to="0").active
+                  li(data-target="#myCarousel" data-slide-to="1")
+                  li(data-target="#myCarousel" data-slide-to="2")
+                //- Carousel Items
+                br
+                .carousel-inner
+                  .active.item
+                    img(src="img/darphin_ideal.jpg" alt="darphin_ideal creme" id="moisturiser1")
+                    h4 Moisturiser1
+                    .carousel-caption
+                  .item
+                    img(src="img/cowshed1.jpeg" alt="cowshed creme picture" id="moisturiser2")
+                    h4 Moisturiser2
+                    .carousel-caption
+                  .item
+                    img(src="img/tangerineshea1.jpg" alt="tangarine shea creme picture" id="moisturiser3")
+                    h4 Moisturiser3
+                    .carousel-caption
+                //- Carousel navigation
+                a(href="#myCarousel" data-slide="prev").carousel-control.left
+                  span.glyphicon.glyphicon-chevron-left
+                a(href="#myCarousel" data-slide="next").carousel-control.right
+                  span.glyphicon.glyphicon-chevron-right
+        br
+        .container
+          .container.col-xs-12.text-center
+            a(href="http://www.mixedstreets.com")
+              button.btn.btn-info Click here
+      
+      .footer
+        br
+        .container
+          .row
+            .col-xs-12
+              .leftFooter.pull-left
+                ul.list-unstyled.footerLinks
+                  li
+                    a(href="/about") About us
+                  li
+                    a(href="/contact") Contact us
+                  li
+                    a(href="/privacy") Privacy Policy
+            p.text-center &copy; by mixedstreets
+            script(src="bootstrap3_2_0/jquery/jquery-1.11.1.min.js")
+            script(src="bootstrap3_2_0/js/bootstrap.min.js")
